@@ -19,7 +19,6 @@ else
     dnf install -y \
         @"KDE Plasma Workspaces"
 
-    systemctl disable gdm
     systemctl enable sddm
     true
 
