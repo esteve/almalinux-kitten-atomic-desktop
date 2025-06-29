@@ -8,4 +8,9 @@ set -xeuo pipefail
 # dnf install -y 'dnf-command(config-manager)'
 # dnf config-manager --set-enabled crb
 
-echo "Hello, Atomic AlmaLinux respin world!."
+dnf install -y 'dnf-command(config-manager)' epel-release
+dnf config-manager --set-enabled crb
+
+dnf install -y system-reinstall-bootc
+
+#echo "Hello, Atomic AlmaLinux respin world!."
