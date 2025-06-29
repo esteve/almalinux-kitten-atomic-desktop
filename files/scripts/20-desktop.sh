@@ -15,6 +15,11 @@ elif [[ "${VARIANT}" == "kde" ]]; then
     systemctl enable sddm
 
 else
+    echo "NO VARIANT FOUND ${VARIANT} ---"
+    dnf install -y \
+        @"KDE Plasma Workspaces"
+
+    systemctl enable sddm
     true
 
 fi
