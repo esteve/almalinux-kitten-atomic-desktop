@@ -10,7 +10,7 @@ set -xeuo pipefail
 
 dnf install -y 'dnf-command(config-manager)' epel-release
 dnf config-manager --set-enabled crb
-dnf config-manager --set-enabled epel-testing
+#dnf config-manager --set-enabled epel-testing
 
 dnf install -y system-reinstall-bootc
 
