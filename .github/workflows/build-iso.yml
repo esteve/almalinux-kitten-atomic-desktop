@@ -8,6 +8,9 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref || github.run_id }}
   cancel-in-progress: true
 
+permissions:
+  id-token: write
+
 jobs:
   set-env:
     if: github.repository != 'AlmaLinux/atomic-respin-template'
